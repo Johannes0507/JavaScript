@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Call 方法與 this 關係</h1>
+    <script>
+        // ex 1
+        // function greet() {
+        //     let reply = `Hi, ${this.obj}`
+        //     console.log(reply);
+        // }
+        
+        // let obj = {
+        //     person: "Johannes"
+        // }
+        // greet("Johannes");
+        // 這裡調用call呼叫obj所以this.person變成obj裡面的person屬性
+        // greet.call(obj);
+
+        
+        // ex 2
+        const obj = { a: 1, b: 2 }
+
+        function myFunction1() {
+            console.log("output 1: ", this.a);
+            setTimeout( function() {
+                console.log("output 2: ", this.a);
+            }, 1000) 
+        }
+
+        myFunction1.call(obj);
+
+        // ex 3
+        const obj2 = { a: 1, b: 2 }
+
+        function myFunction2() {
+            console.log("output 1: ", this.a);
+            setTimeout( () => {
+                console.log("output 2: ", this.a);
+            }, 1000) 
+        }
+
+        myFunction2.call(obj2);
+    </script>
+</body>
+</html>

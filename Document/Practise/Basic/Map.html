@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Map 陣列方法</h1>
+    <script>
+        var fruits = ["Banana", "Kiwi", "Guava", "Grape"]
+        var result = fruits.map(function(tasty){
+            return tasty + " is yummy"
+        })
+        console.log(result)
+        // 箭頭
+        var result_f = fruits.map((tasty) => tasty + " is unpalatable");
+        console.log(result_f);
+
+        //一般用法
+        function map2(fruits){
+            var result_for = [] 
+            for(var i = 0; i < fruits.length; i++){
+            result_for.push(fruits[i] + " is yummy")
+            }
+            return result_for;
+        }
+        // 數的用法
+        var array = [1, 2, 3, 4, 5, 6];
+
+        var result_1 = array.map(function(x){
+            return x * 3;
+        })
+        console.log(result_1)
+
+        // // 箭頭用法
+        var result_2 = array.map((x) => x * 3);
+        console.log(result_2);
+    </script>
+</body>
+</html>

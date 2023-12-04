@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reduce API</h1>
+    <script>
+        // forEach  方法
+        var numbers = [1, 2, 3, 4, 6, 7, 9];
+        var count = 0;
+        numbers.forEach(function (number){
+            count += number;
+        })
+        console.log(count);
+
+
+        // reduce 用法
+        var result = numbers.reduce(function (sum, current) {
+           sum += current; 
+           return sum
+        }, 0)
+        console.log(result);
+    </script>
+</body>
+</html>

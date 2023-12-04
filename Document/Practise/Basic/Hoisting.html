@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>變數提升 Hoisting</h1>
+    <strong>1. 不管在哪一行使用了變數，都視為第一行宣告</strong>
+    <script>
+        // console.log(y);
+        // const y = 10;
+        // console.log(y);
+
+        // console.log(x);
+        // let x = 10;
+        // console.log(x);
+
+        // console.log(x);
+        // var x = 10;
+        // console.log(x);
+
+        // 每一個宣告方式的作用域會有很大的不同 詳細註解在notion 
+    </script>
+    
+    <br>
+    <strong>2. 真實情況</strong>
+    <script>
+        console.log(x);
+        var x = 10;
+
+        function sayHello(){
+            var x = undefined;
+            console.log(x);
+            x = 20;
+            console.log(x);
+        }
+        sayHello()
+        // 宣告時會有三種比較情況
+        // 第一種使用var當全域變數宣告，就會提升到作用域的頂部(Hoisting)，其他但是如果還沒付予值就會
+    </script>
+</body>
+</html></html>

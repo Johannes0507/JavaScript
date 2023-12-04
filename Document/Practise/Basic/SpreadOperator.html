@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread Operator 擴展運算子 (...)</h1>
+    <script>
+        let arr1 = [1, 2, 4, 5];
+        let arr2 = [6, 7, 10];
+
+        // 找出最小值
+        let result = Math.min(...arr1);
+        console.log(result);
+
+        // 連結兩個array 可以有兩種寫法
+        console.log(arr1.concat(arr2));
+        console.log([...arr1, ...arr2])
+
+        // 使用在objects 重複的會被第二個取代掉
+        let obj1 = {a:1, b:2 , c:5};
+        let obj2 = {c:6, d:7};
+        let result_2 = {...obj1, ...obj2};
+        
+        console.log(result_2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for in & for of -> Iterator </h1>
+    <script>
+        // Iterator
+        var myString = "Johannes";
+        var iterator = myString[Symbol.iterator]();
+
+        // for...of -> 可以"迭代""可迭代"的"物件" iterable objects 
+        // 要先
+        // ex Array
+
+        const object = { a: 1, b: 2, c: 3 };
+
+        for (const property in object) {
+            console.log(`${property}: ${object[property]}`);
+        }
+        
+
+        let objects = { c: 1, d: 2, e: 3}
+
+        for (let object in objects) {
+            console.log("Object: ", object);
+        }
+        // Python 會等於 for object in objects:
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for in & for of</h1>
+    <script>
+        let myString = "hello";
+        let myArray = [1, 2, 3, 4, 5, 6]
+        let obj = {a: 2, b: 3, c: 5}
+
+        // for...of
+        for (let string of myString) {
+            console.log(string);
+        }
+
+        for (let [key, value] of Object.entries(obj)) {
+            console.log(key, value);
+        }
+
+        // for...in
+        for (let number in myArray) {
+            console.log(myArray[number]);
+        }
+
+        
+        
+    </script>
+</body>
+</html>

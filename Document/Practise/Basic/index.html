@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello, JavaScript!!</h1>
+
+<strong>1. for & while & if、else</strong>
+    <script> 
+    // for & while & if、else
+
+        // 99 Multiply
+        // for (let i=1; i<10; i++) {
+        //     for (let j=1; j<10; j++) {
+        //         let result = i * j;
+        //         let multiply = i + " * " + j + " = " + result;
+        //         console.log(multiply);
+        //     }
+        // }
+        
+        // Filter Odd Number
+        // let x = 0;
+        // let y = 2;
+        // while (x < 100) {
+        //     x = x + 1;
+        //     if (x % y == 1) {
+        //         console.log(x);
+        //     }
+        // }
+
+        // Filter Even Numbrt and Print "好想找到工作"
+        // let y = 2;
+        // for (let i = 1; i < 100; i++) {
+        //     if (i % y == 0) {
+        //         console.log(i);
+        //     }else {
+        //         console.log("好想找到工作");
+        //     }
+        // }
+    </script>
+<br />
+
+<strong>2. Statement & Exception</strong>
+    <script> // Statement & Exception
+    // 函式陳述式"Statement"可以在宣告之後隨處使用
+        helloFunctionStatement()
+        function helloFunctionStatement() {
+            console.log("Helloe function statement");
+        }
+        helloFunctionStatement()
+
+    // 函式表達式"Expression"需要再宣告之後才可以使用他
+    var helloFunctionExpression = function() {
+        console.log("Hello function expression");
+    }
+    helloFunctionExpression()
+    
+    // Statement & Exception 不同之處是因為有Hoisting變數提升的關係
+    </script>
+<br />    
+
+<strong>3. 變數作用域的範圍(Scope)作用域 由 function 來界定</strong>
+    <script>
+        // var a = 10;
+        // function HelloWorld() {
+        //     const a = 50;
+        //     console.log(a)
+        // }
+        // var a = 30;
+        // HelloWorld();
+        // console.log(a);
+        // 在function裡面宣告如果沒有加 var 、 const 、 let 會變成沒辦法受Scope引響
+    </script>
+<br />
+</body>
+</html>

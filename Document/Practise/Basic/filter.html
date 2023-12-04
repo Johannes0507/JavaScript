@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>用filter 過濾資料</h1>
+    <script>
+        // arr 裡面篩選出 大於 2 小於 7 的值
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8]
+        var new_arr = arr.filter(function(element){
+            return (element > 2) && (element <= 7); 
+        })
+        console.log(new_arr);
+
+        var members = [
+            {"name": "John", "age": 20}, 
+            {"name": "Johannes", "ahe": 30},
+            {"name": "Mary", "age": 50}
+        ]
+
+        // reutnr 成員名稱大於4個字的值
+        var member_length = members.filter(function(member){
+            return member.name.length > 4;
+        })
+        console.log(member_length);
+
+        // return 成員名稱小於5的值
+        var member_length_2 = members.filter((member) => member.name.length < 5);
+        console.log(member_length_2);
+
+        // reutrn 年齡大於20的值
+        var member_age = members.filter(function(member){
+            return member.age > 20;
+        })
+        console.log(member_age);
+
+    </script>
+</body>
+</html>

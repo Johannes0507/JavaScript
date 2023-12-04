@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6 (let & const)</h1>
+    <script>
+        // 1. 作用域的改變
+        // var => function
+        // let ocnst => {}
+
+        // ex 1 (for迴圈)
+        // var i = 0;
+        // for (var i = 0; i < 10; i++){
+        //     console.log("迴圈跑第" + i + "圈");
+        // } 
+        // console.log(i);
+
+        // let i = 0;
+        // for (let i = 0; i < 10; i++){
+        //     console.log("迴圈跑第" + i + '圈');
+        // }
+        // console.log(i);
+
+
+        // 2. if else
+        // let x = 1;
+        // if(x === 1){
+        //     let x = 5;
+        // }else{
+        //     let x = 10;
+        // }
+        // console.log(x);
+        
+        // let x = 1;
+        // if(x === 1){
+        //     x = 10;
+        // }else{
+        //     x = 5;
+        // }
+        // console.log(x);
+        
+        // const 常數
+        const REST_TIME = 2;
+        console.log(REST_TIME);
+        
+        const members = [
+            {name: 'John',
+            age: 25},
+            {name: 'Mark',
+            age: 20}
+        ]
+        members[1].name = 'Mary';
+        console.log(members[1]);
+
+    </script>
+</body>
+</html>
